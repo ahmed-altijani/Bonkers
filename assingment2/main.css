@@ -1,0 +1,58 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+   
+    margin: 50px auto 0 auto ;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+}
+
+h2{
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+    font-weight: normal;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+
+.div-1{
+    
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+
+a{
+    color: #EEF7FF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:link {
+    color: ##EEF7FF;
+}
+
+a:hover {
+    color: #11999E;
+}
+
+a:visited {
+    color: #888;
+}
+
+a:active {
+    color: #49108B;
+}
+
+h2{
+    margin: 50px 0 0 0;
+}
+

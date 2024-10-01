@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Assignment 1</h1>
+        <hr>
+        <dl>
+            <dt>1. What is HTML and what does it stand for?</dt> 
+            <dd>HTML stands for Hypertext Markup Language. It is the standard markup language used to create and design web pages and applications. HTML elements are the building blocks of web pages, and by combining HTML with CSS (Cascading Style Sheets) and JavaScript, it's possible to create visually engaging and interactive websites.</dd>
+            <br><br>
+            
+            <dt>2. What is the difference between HTML and XHTML?</dt>
+            <dd><pre>HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) both serve the purpose of structuring content for the web. The main differences are: 
+    - HTML is based on SGML (Standard Generalized Markup Language) and doesn't require strict syntax rules. 
+    - XHTML is an application of XML (Extensible Markup Language) and thus requires stricter syntax rules such as closing all tags, writing all tags and attributes in lowercase, and quoting all attribute values.</pre></dd>
+            
+            <dt>3. What are the basic building blocks of an HTML document?</dt>
+            <dd><pre>The basic building blocks of an HTML document are:
+    HTML Tags: These are the elements wrapped in angle brackets like < html >, < body >, < div >, and more.
+    Attributes: They provide additional information about HTML elements, such as class, id, style, etc.
+    Content: This is the text or media placed between the tags that appear on the webpage.
+                </pre></dd>
+
+            <dt>4. How do you create a hyperlink in HTML?</dt>
+            <dd><pre>To create a hyperlink in HTML, use the <a> tag with the href attribute. Here is an example:
+    < a href="https://www.example.com" > Visit Example.com < /a >
+                </pre></dd>
+
+            <dt>5. What is the purpose of the "alt" attribute in the HTML "img" tag?</dt>
+            <dd><pre>The alt attribute in the < img > tag provides alternative text for an image if it cannot be displayed. This text helps with accessibility, as screen readers can read it aloud for visually impaired users.</pre></dd>
+            
+            <dt>6. How can you create a table in HTML?</dt>
+            <dd><pre>A table in HTML can be created using the < table > tag along with < tr > (table row), < th > (table header), and < td > (table data) tags:
+    < table >
+        < tr >
+            < th > Header 1 < / th >
+            < th > Header 2 < / th >
+        < / tr >
+        < tr >
+            < td > Data 1 < / td >
+            < td >Data 2< / td >
+        < / tr >
+    < / table >
+            </pre></dd>
+
+            <dt>7. What is the purpose of the "doctype" declaration in HTML?</dt>
+            <dd><pre>The <!DOCTYPE> declaration is an instruction to the web browser about the version of HTML the page is written in. It is used at the very beginning of an HTML document to ensure the browser renders the content correctly.</pre></dd>
+
+            <dt>8. What is the difference between HTML elements and HTML tags?</dt>
+            <dd><pre>HTML Tags: These are the labels used to start and end an element, such as < p > and < / p >.
+    HTML Elements: These refer to the entire entity, including the opening tag, the content, and the closing tag. For example, < p > Hello World! < / p > is a paragraph element.</pre></dd>
+
+            <dt>9. How do you add comments in HTML?</dt>
+            <dd><pre>Comments in HTML are added using < ! - - and - - > to encapsulate the comment text, and they do not appear in the browser.</pre></dd>
+
+            <dt>10. What is the significance of the "head" section in an HTML document?</dt>
+            <dd><pre>The < head > section of an HTML document is crucial as it contains metadata (data about data) and links to external files like CSS stylesheets and JavaScript files. 
+    It includes elements like < title >, < link >, < meta >, < style >, and < script > that help define the title of the document, character set, styles, scripts, and other meta information that is not displayed directly on the web page.</pre></dd>
+            
+            <dt>11. How do you define headings in HTML?</dt>
+            <dd><pre>Headings in HTML are defined using the < h1 > to < h6 > tags, where < h1 > is the highest (or largest) level heading and < h6 > is the lowest (or smallest) level.</pre></dd>
+
+            <dt>12. What is the role of the "title" element in HTML?</dt>
+            <dd><pre>The < title > element defines the title of the HTML document. It is displayed on the browser's title bar or tab, and it is also used by search engines to understand the content of the page.</pre></dd>
+
+            <dt>13. How do you create an ordered list in HTML?</dt>
+            <dd><pre>An ordered list in HTML is created using the < ol > tag. Each list item is placed within the < li > tags. For example:
+    < ol >
+        < li >First item< / li >
+        < li >Second item< / li >
+    < / ol ></pre></dd>
+
+            <dt>14. What are the different types of form elements in HTML?</dt>
+            <dd><pre>Form elements in HTML include:
+    < input >: Used for various input types like text, password, checkbox, radio, file, etc.
+    < textarea >: Used for multiline text input.
+    < select >: Used for dropdown menus.
+    < button >: Used to create clickable buttons.
+    < label >: Used to define labels for form elements.
+    < fieldset > and < legend> : Used to group related elements in a form.</pre></dd>
+
+            <dt>15. How do you embed an image in an HTML document?</dt>
+            <dd><pre>You embed an image using the < img > tag and the src attribute to specify the image source. For example:
+    < img src = "image.jpg"  alt = "Description of image" ></pre></dd>
+
+            <dt>16. What is the purpose of the "href" attribute in an anchor tag?</dt>
+            <dd><pre>The href attribute in an anchor (< a >) tag specifies the URL of the page or resource the link points to. It defines the destination of the hyperlink.</pre></dd>
+
+            <dd>17. How do you create a line break in HTML?</dd>
+            <dd><pre>A line break is created using the < br > tag. It is an empty tag that doesn't require a closing tag. Example:
+    < p >This is the first line. < br > This is the second line.< / p ></pre></dd>
+
+            <dt>18. What is the purpose of the "target" attribute in an anchor tag?</dt>
+            <dd><pre>The (target) attribute in an anchor (< a >) tag specifies where the linked document will open. For example:
+    _blank: Opens the link in a new tab or window.
+    _self: Opens the link in the same frame (default).
+    _parent: Opens the link in the parent frame.
+    _top: Opens the link in the full body of the window.</pre></dd>
+
+            <dt>19. What is the difference between block-level and inline elements in HTML?</dt>
+            <dd><pre>Block-level elements: These elements take up the full width available and start on a new line. Examples include < div >, < p >, < h1 >, < section >, and < article >.
+Inline elements: These elements take up only as much width as their content requires and do not start on a new line. Examples include < span >, < a >, < img >, and < strong >.</pre></dd>
+
+            <dt>20. How do you create a horizontal rule in HTML?</dt>
+            <dd><pre>A horizontal rule is created using the < hr > tag. It is used to create a thematic break or a horizontal line between sections of content.</pre></dd>
+
+            <dt>21. What is the role of the "span" element in HTML?</dt>
+            <dd>The < span > element is an inline container used to group and style small portions of text or elements without introducing a line break. It is often used for applying CSS styles or JavaScript functions to specific sections of text within a larger block.</dd>
+            
+            <dt>22. How do you create a checkbox in HTML?</dt>
+            <dd>
+                A checkbox is created using the < input > tag with the type="checkbox" attribute. Example:
+                <pre>
+                    < input type="checkbox" id="option1" name="option1" value="Option 1" >
+                    < label for="option1">Option 1< / label >                    
+                </pre>
+            </dd>
+
+            <dt>23. What is the purpose of the "src" attribute in the "script" tag?</dt>
+            <dd>
+                The src attribute in the < script > tag specifies the URL of an external JavaScript file. It tells the browser where to load the script from. Example:
+                <pre>< script src="script.js" > < / script ></pre>
+            </dd>
+
+            <dt>24. How do you create a dropdown menu in HTML?</dt>
+            <dd>
+                A dropdown menu is created using the < select > element along with multiple < option > elements. Example:
+                <pre>< select name="options">
+        < option option value="1"> Option 1 < /option>
+        < option value="2"> Option 2 < /option >
+        < option value="3"> Option 3 < /option>
+< /select>
+                  </pre>
+            </dd>
+            
+            <dt>25. What is the purpose of the "colspan" attribute in an HTML table?</dt>
+            <dd>
+                The < colspan > attribute in an HTML table allows a cell to span across multiple columns. It merges two or more columns into one cell. Example:
+                <pre>
+                    < td colspan="2">This cell spans two columns< / td >
+                </pre>
+            </dd>
+
+            <dt>26. How do you add a background image to an HTML element?</dt>
+            <dd>
+                You can add a background image to an HTML element using the background-image property in CSS. Example:
+                <pre>< div style="background-image: url('background.jpg');" >
+        Content here
+< / div >
+                  </pre>
+            </dd>
+
+            <dt>27) What is the purpose of the "action" attribute in an HTML form?</dt>
+            <dd>
+                The action attribute in a form specifies the URL to which the form data will be sent when the form is submitted. Example:
+                <pre>
+    < form action="/submit-form" method="post" >
+            < ! - - form fields - - >
+    < / form >                      
+                </pre>
+            </dd>
+
+            <dt>28) How do you add a video to an HTML document?</dt>
+            <dd>
+                You can add a video using the < video > tag, and you can include the src attribute to point to the video file. Example:
+                <pre>
+< video controls >
+    < source src="video.mp4" type="video/mp4" >
+    Your browser does not support the video tag.
+< /video >
+
+                </pre>
+            </dd>
+
+            <dt>29) What is the purpose of the "disabled" attribute in an input field?</dt>
+            <dd>
+                The disabled attribute makes an input field uneditable or unclickable by the user. The field's value won't be submitted with the form. Example:
+                <pre>
+< input type="text" disabled >
+                </pre>
+            </dd>
+
+            <dt>30) How do you create a form in HTML?</dt>
+            <dd>
+                A form in HTML is created using the < form > tag, which can include various form elements like < input >, < textarea >, < select >, etc. Example:
+                <pre>
+< form action="/submit" method="post" >
+    < label for="name">Name:< / label >
+    < input type="text" id="name" name="name" >
+    < input type="submit" value="Submit" >
+< /form> </pre>
+            </dd>
+
+            <dt>31) What is the purpose of the "placeholder" attribute in an input field?</dt>
+            <dd>
+                The placeholder attribute provides a hint or example text inside the input field, showing the user what type of data is expected. The placeholder disappears when the user starts typing. Example:
+                <pre>< input type="text" placeholder="Enter your name" ></pre>
+            </dd>
+
+            <dt>32) How do you create a hyperlink with an image in HTML?</dt>
+            <dd>
+                To create a hyperlink with an image, you wrap the <img> tag inside an <a> tag. Example:
+                <pre>
+< a href="https://example.com" >
+  < img src="image.jpg" alt="Example Image" >
+< /a >
+                </pre>
+            </dd>
+
+            <dt>33) What is the purpose of the "required" attribute in an input field?</dt>
+            <dd>
+                The required attribute makes an input field mandatory. The form cannot be submitted until the required field is filled out. Example:
+                <pre>
+< input type="text" required >
+                </pre>
+            </dd>
+
+            <dt>34) How do you create a responsive layout in HTML?</dt>
+            <dd>
+                A responsive layout is created by using CSS techniques like media queries, flexible grids, and relative units (like percentages or em). Additionally, you can use frameworks like Bootstrap. Example with media queries:
+                <pre>
+@media (max-width: 600px) {
+        .container {
+                flex-direction: column;
+        }
+}
+                </pre>
+            </dd>
+
+            <dt>35) What is the purpose of the "charset" attribute in the "meta" tag?</dt>
+            <dd>
+                The charset attribute specifies the character encoding for the HTML document, ensuring the correct display of text and symbols. For example, UTF-8 supports most languages:
+                <pre>
+< meta charset="UTF-8" >
+                </pre>
+            </dd>
+
+            <dt>36) What is the purpose of the "autocomplete" attribute in an input field?</dt>
+            <dd>
+                The autocomplete attribute enables or disables the browser's autofill feature for an input field. If set to "on", the browser will suggest previously entered values; if set to "off", it will not. Example:
+                <pre>
+< input type="text" autocomplete="off" >
+                </pre>
+            </dd>
+
+            <dt>37) How do you create a button in HTML?</dt>
+            <dd>
+                A button in HTML is created using the < button > or < input type="button" > element. Example:
+                <pre>
+< button button type="submit">Submit< / button >
+                </pre>
+            </dd>
+
+            <dt>38) What is the purpose of the "nowrap" attribute in an HTML table?</dt>
+            <dd>
+                The nowrap attribute (now obsolete in modern HTML) prevents the text inside a table cell from wrapping to a new line. Instead, it forces the content to remain on one line.
+                <pre>
+< td nowrap > Content stays on one line < / td >
+                </pre>
+            </dd>
+            
+            <dt>39) How do you create a responsive image in HTML?</dt>
+            <dd>
+                A responsive image is created using the CSS max-width property set to 100%, making the image scale with the screen size:
+                <pre>
+< img src="image.jpg" style="max-width: 100%; height: auto;" >
+                </pre>
+            </dd>
+
+            <dt>40) What is the purpose of the "target" attribute in an anchor tag?</dt>
+            <dd>
+                The target attribute in an anchor ( < a > ) tag specifies where to open the linked document. Common values include: <br> <br>
+
+                    _blank: Opens the link in a new tab or window. <br>
+                    _self: Opens the link in the same window/tab (default). <br>
+                    _parent: Opens the link in the parent frame. <br>
+                    _top: Opens the link in the full window. <br>
+                    <pre>
+< a href="https://example.com" target="_blank" > Visit Example < / a >
+                    </pre>
+            </dd>
+
+            <dt>41) How do you create a button in HTML?</dt>
+            <dd>
+                You can create a button using the < button > tag or the < input type="button" > tag. Example:
+                <pre>
+< button type="button" > Click Me < / button >
+                </pre>
+            </dd>
+            
+            <dt>42) What is the purpose of the "target" attribute in an anchor tag?</dt>
+            <dd>
+                The target attribute in an anchor (<a>) tag specifies where the linked document should open. Example values: <br><br>
+                _blank: Opens the link in a new tab or window. <br>
+                _self: Opens the link in the same window or tab (default). <br>
+                _parent: Opens the link in the parent frame. <br>
+                _top: Opens the link in the full window.
+                <pre>
+< a href="https://example.com" target="_blank" > Visit Example < / a >
+                </pre>
+            </dd>
+
+            <dt>43) What is the purpose of the "placeholder" attribute in a textarea?</dt>
+            <dd>
+                The placeholder attribute in a < textarea > provides hint text to the user, showing what content is expected. The placeholder text disappears once the user starts typing. Example:
+                    <pre>
+< textarea placeholder="Enter your message" >< / textarea >
+                    </pre>
+            </dd>
+
+            <dt>44) What is the purpose of the "readonly" attribute in an input field?</dt>
+            <dd>
+                The readonly attribute makes an input field non-editable, meaning the user cannot modify its content, but the field can still be submitted with a form. Example:
+                <pre>
+< input type="text" value="Read-only text" readonly >
+                </pre>
+            </dd>
+
+            <dt>45) How do you create a responsive video in HTML?</dt>
+            <dd>
+                To create a responsive video, you can use the <video> tag and control its size using CSS to ensure it scales properly across different screen sizes. Example:
+                    <pre>
+< video controls style="max-width: 100%; height: auto;" >
+    < source src="video.mp4" type="video/mp4" >
+    Your browser does not support the video tag.
+< / video >
+                    </pre>
+            </dd>
+
+            <dt>46) How do you use media queries to modify the video size or aspect ratio for different screen</dt>
+            <dd>
+                resolutions or device orientations? <br>
+                You can use CSS media queries to adjust the video size and aspect ratio depending on the screen size or orientation. Example:
+                <pre>
+@media (max-width: 600px) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (orientation: landscape) {
+  video {
+    width: 70%;
+    height: auto;
+  }
+}
+                </pre>
+            </dd>
+
+            <dt>47) How do you embed audio in an HTML document?</dt>
+            <dd>
+                You can embed audio in HTML using the < audio>  tag. Example:
+                <pre>
+< audio controls >
+  < source src="audio.mp3" type="audio/mpeg" >
+  Your browser does not support the audio element.
+< / audio >
+
+                </pre>
+            </dd>
+
+            <dt>48) Advanced HTML Interview Questions and Answers</dt>
+            <dd>
+                This is more of a broad request, but here are a few advanced HTML topics: <br>
+
+                Semantic HTML: Using elements like < article >, < section >, and < aside > for better document structure and accessibility.
+                Web Accessibility: Adding aria attributes and accessible labels for better usability.
+                HTML5 APIs: Using local storage, geolocation, canvas, and more.
+                Responsive Design: Media queries, responsive images, and viewport meta tag usage.
+                Custom Data Attributes: Utilizing data-* attributes for embedding custom data into HTML elements.
+            </dd>
+
+
+            <dt>49) What is the purpose of the "span" element in HTML?</dt>
+            <dd>
+                The < span > element is an inline container used to group and style small portions of text or elements without causing a line break. It is often used for styling purposes or JavaScript manipulation. Example:
+                <pre>
+< span class="highlight" >Important text< / span >                    
+                </pre>
+            </dd>
+
+
+            <dt>50) What is the purpose of the "required" attribute in a form element?</dt>
+            <dd>
+                The required attribute ensures that a form field must be filled out before submitting the form. If the field is left empty, the browser will prompt the user to complete it. Example:
+                <pre>
+< input type="text" required >
+                </pre>
+            </dd>
+
+            <dt>51) How do you create a checkbox in HTML?</dt>
+            <dd>
+                A checkbox is created using the <input> tag with the type="checkbox" attribute. Example:
+                <pre>
+< input type="checkbox" id="option1" name="option1" value="Option 1" >
+< label for="option1"> Option 1 < / label >
+                </pre>
+            </dd>
+
+
+            <dt>52) What is the purpose of the "cols" and "rows" attributes in the "textarea" tag?</dt>
+            <dd>
+                The cols and rows attributes in a < textarea > tag define the visible width and height (in terms of character width and row height) of the text area. Example:
+                <pre>
+< textarea cols="30" rows="10">< /textarea >
+                </pre>
+            </dd>
+
+            <dt>53) What is the purpose of the "scope" attribute in an HTML table?</dt>
+            <dd>
+                The scope attribute is used in table headers (< th >) to define whether the header relates to a row, column, or group of rows or columns. This enhances accessibility, especially for screen readers. Example:
+                <pre>
+< th scope="col">Header for Column< /th>
+< th scope="row">Header for Row< /th>
+                </pre>
+            </dd>
+
+            <dt>54) What is the purpose of the "rel" attribute in the "link" tag?</dt>
+            <dd>
+                The rel attribute in the < link > tag specifies the relationship between the linked resource and the current document. It is often used for stylesheets, icons, or preloading resources. Example:
+                <pre>
+< link rel="stylesheet" href="styles.css" >
+                </pre>
+            </dd>
+
+
+            <dt>55) How do you create a range input slider in HTML?</dt>
+            <dd>
+                A range input slider is created using the < input > tag with type="range". You can set minimum, maximum, and default values. Example:
+                <pre>
+< input type="range" min="0" max="100" value="50" >
+                </pre>
+            </dd>
+
+
+            <dt>56) What is the purpose of the "disabled" attribute in an HTML element?</dt>
+            <dd>
+                The disabled attribute prevents users from interacting with the element. For input fields, buttons, or select elements, the element becomes unclickable and cannot be submitted. Example:
+                <pre>
+< input type="text" maxlength="10" >
+                </pre>
+            </dd>
+
+
+            <dt>57) What is the purpose of the "maxlength" attribute in an input field?</dt>
+            <dd>
+                The maxlength attribute specifies the maximum number of characters that can be entered into an input field. Example:
+                <pre>
+< input type="text" maxlength="10" >
+                </pre>
+            </dd>
+
+
+            <dt>58) How do you create a numbered list in HTML?</dt>
+            <dd>
+                A numbered list is created using the < ol > (ordered list) tag, with each item defined using < li > (list item). Example:
+                <pre>
+< ol >
+  < li >First item< /li >
+  < li >Second item< /li >
+  < li >Third item< /li >
+< /ol >
+
+                </pre>
+            </dd>
+
+            <dt>59) What is the purpose of the "target" attribute in the "form" tag?</dt>
+            <dd>
+                The target attribute in the < form > tag specifies where to display the form submission result. Common values: <br> <br>
+                    _blank: Opens the result in a new tab or window. <br>
+                    _self: Submits the form in the same tab (default). <br>
+                    _parent: Submits the form in the parent frame. <br>
+                    _top: Submits the form in the full body of the window. <br>
+                <pre>
+< form action="/submit" target="_blank" >< / form >
+                </pre>
+            </dd>
+
+            <dt>60) How do you create a multi-line text input field in HTML?</dt>
+            <dd>
+                A multi-line text input field is created using the < textarea > tag. Example:
+                <pre>
+< textarea rows="4" cols="50" >< /textarea >                    
+                </pre>
+            </dd>
+
+
+            <dt>61) What is the purpose of the "hidden" attribute in an HTML element?</dt>
+            <dd>
+                The hidden attribute is used to hide an HTML element. The element will not be visible on the page, and it won't take up any space. Example:
+                <pre>
+< div hidden>This content is hidden< / div >
+                </pre>
+            </dd>
+
+            <dt>62) How do you set the background color of an HTML element?</dt>
+            <dd>
+                You can set the background color using the background-color CSS property. Example:
+                <pre>
+< div style="border: 2px solid black;">This has a black border< /div>
+                </pre>
+            </dd>
+
+            <dt>63) How do you add a border to an HTML element?</dt>
+            <dd>
+                You can add a border using the border CSS property. Example:
+                <pre>
+< div style="border: 2px solid black;">This has a black border< /div>
+                </pre>
+            </dd>
+
+            <dt>64) How do you center-align text horizontally in an HTML element?</dt>
+            <dd>
+                You can center-align text using the text-align CSS property. Example:
+                <pre>
+< div style="text-align: center;">This text is centered< /div>
+                </pre>
+            </dd>
+
+            <dt>65) How do you set the font color of an HTML element?</dt>
+            <dd>
+                You can set the font color using the color CSS property. Example:
+                <pre>
+< p style="color: red;">This text is red< /p>
+                </pre>
+            </dd>
+
+            <dt>66) What is the purpose of the HTML < meta > tag?</dt>
+            <dd>
+                The < meta > tag provides metadata about the HTML document, such as character encoding, author, and viewport settings. This information helps search engines and browsers understand the page content. Example:
+                <pre>
+< meta charset="UTF-8">
+< meta name="description" content="An example of meta tag usage">
+                </pre>
+            </dd>
+
+            <dt>67) What is the purpose of the HTML < iframe > tag?</dt>
+            <dd>
+                The tag is used to embed another HTML document within the current page, such as embedding videos, maps, or external websites. Example:
+                <pre>
+< iframe src="https://example.com" width="600" height="400">< /iframe>
+                </pre>
+            </dd>
+
+            <dt>68) What is the purpose of the HTML < header > tag?</dt>
+            <dd>
+                The tag represents the introductory content or a set of navigation links for a webpage or section. It typically contains headings, logos, or navigation menus. Example:
+                    <pre>
+< header>
+  < h1>Website Title< /h1>
+  < nav>...< /nav>
+< /header>
+
+                    </pre>
+            </dd>
+
+            <dt>69) What is the purpose of the HTML < aside > tag?</dt>
+            <dd>
+                The < aside > tag represents content that is related to the main content but is not a part of the main flow, such as sidebars, ads, or extra information. Example:
+                <pre>
+< aside>
+  < p>This is related content.< /p>
+< /aside>
+                </pre>
+            </dd>
+
+            <dt>70) What is the role of the "canvas" element in HTML5?</dt>
+            <dd>
+                The < canvas > element is used for drawing graphics via JavaScript. It provides a blank area on which you can create dynamic, programmatically generated images, shapes, and animations. Example:
+                <pre>
+< canvas id="myCanvas" width="400" height="300">< /canvas>
+                </pre>
+            </dd>
+
+
+            <dt>71) How do you create a progress bar with HTML and CSS?</dt>
+            <dd>
+                You can create a progress bar using the < progress > element in HTML or custom styles with CSS. Example:
+                <pre>
+< progress value="70" max="100">< /progress>
+                </pre>
+            </dd>
+
+
+            <dt>72) What is the role of the "datalist" element in HTML5?</dt>
+            <dd>
+                The < datalist> element provides an autocomplete feature on < input> fields by defining a list of predefined options that the user can choose from. Example:
+                <pre>
+< input list="browsers">
+< datalist id="browsers">
+  < option value="Chrome">
+  < option value="Firefox">
+  < option value="Safari">
+< /datalist>
+                </pre>
+            </dd>
+
+            <dt>73) How do you center-align an HTML element?</dt>
+            <dd>
+                You can center an element by using margin: auto; for block-level elements and text-align: center; for inline elements. Example for block-level elements:
+                <pre>
+< div style="width: 50%; margin: auto;">Centered content< /div>
+                </pre>
+            </dd>
+
+            <dt>74) What is the role of the "mark" element in HTML5?</dt>
+            <dd>
+                The < mark > element highlights or marks text, typically used to indicate relevance or for emphasis. Example:
+                    <pre>
+< p>This is < mark mark>important< /mark> text.< /p>
+                    </pre>
+            </dd>
+
+
+            <dt>75) How do you add a video background to an HTML element?</dt>
+            <dd>
+                To add a video background, you use the < video > tag with the autoplay, loop, and muted attributes and position it with CSS. Example:
+                <pre>
+< video autoplay loop muted style="position: fixed; z-index: -1; width: 100%;">
+  < source src="background-video.mp4" type="video/mp4">
+< /video>
+                </pre>
+            </dd>
+
+            <dt>76) What is the purpose of the "formnovalidate" attribute in an HTML form?</dt>
+            <dd>
+                The formnovalidate attribute is used to bypass form validation when submitting. It is typically applied to a submit button when you want to submit the form without running validation checks. Example:
+                <pre>
+< button type="submit" formnovalidate>Submit without validation< /button>
+                </pre>
+            </dd>
+
+            <dt>77) How do you embed a Google Map in an HTML document?</dt>
+            <dd>
+                You can embed a Google Map by using an < iframe > with the map's embed URL. Example:
+                <pre>
+< iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_CODE" width="600" height="450" style="border:0;" allowfullscreen>< /iframe>
+                </pre>
+            </dd>
+
+
+            <dt>78) What is the purpose of the "datetime" attribute in the "time" element?</dt>
+            <dd>
+                The datetime attribute in the < time > element specifies a machine-readable date and time format. It allows browsers, search engines, and other systems to interpret the time accurately. Example:
+                    <pre>
+< time datetime="2023-09-17">September 17, 2023< /time>
+                    </pre>
+            </dd>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        </dl>
+    </body>
+</html>
